@@ -8421,12 +8421,12 @@ a.text-dark:focus {
 
 * {
     box-sizing: border-box;
-    font-family: Vazir;
+    font-family: Vazir-FD-WOL;
 }
 
 html {
     background: #fff;
-    font-family: Vazir !important;
+    font-family: Vazir-FD-WOL !important;
     direction: rtl !important;
 }
 

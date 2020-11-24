@@ -81,7 +81,7 @@
         box-shadow: -9px 9px 13px 6px rgba(153, 153, 191, .5);
         width: 290px;
         position: fixed;
-        background: #fff;
+        background: $white;
         z-index: 99;
         top: 0;
         height: 100vh;
@@ -441,6 +441,7 @@
 /* ----- HEADER STYLES ----- */
 
 .header {
+    font-family: Vazir-Light-FD-WOL;
     max-width: 100%;
     // position: relative;
     &__top {
