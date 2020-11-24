@@ -1,0 +1,16 @@
+{
+    "name": "combaden",
+    "version": "1.0.0",
+    "description": "combaden",
+    "main": " ",
+    "scripts": {
+        "compile:sass": "node-sass scss/bootstrap.scss css/style.css -w"
+    },
+    "author": "nasibeh ashtari",
+    "license": "ISC",
+    "devDependencies": {
+        "jquery": "^3.5.1",
+        "node-sass": "^4.14.1"
+    },
+    "dependencies": {}
+}

@@ -1,0 +1,99 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+    @include respond(tab-land) {
+        // width < 1200?
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    }
+    @include respond(tab-port) {
+        // width < 900?
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem = 12, 12/16
+    }
+    background: #ccc;
+    font-family: Vazir-FD-WOL !important;
+    direction: rtl !important;
+}
+
+body {
+    box-sizing: border-box;
+    @include respond(tab-port) {
+        padding: 0;
+    }
+    color: #212529be !important;
+    text-align: right !important;
+}
+
+section {
+    // margin: 3rem 0;
+    // border: 1px solid $color-line;
+}
+
+
+/* ---------------------------------------- */
+
+
+/* ----- GENERAL STYLES ----- */
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+    transition: 0.5s;
+    outline: 0 !important;
+    cursor: pointer;
+    color: inherit !important;
+}
+
+a:hover {
+    color: $color-light-orange !important;
+}
+
+button,
+input[type="submit"] {
+    cursor: pointer;
+}
+
+button {
+    font-size: 14px !important;
+    font-weight: bolder !important;
+    color: $white !important;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none !important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ------ SECTION TITLE ------ */
+
+.section_title {
+    margin-bottom: 20px;
+    h2 {
+        color: inherit;
+        font-size: 2rem;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 2rem;
+        font-family: Vazir-Bold-FD-WOL;
+    }
+}

@@ -1,0 +1,322 @@
+.section__Checkout {
+    margin-bottom: 56px;
+    .user-actions {
+        margin-bottom: 20px;
+        h3 {
+            font-size: 13px;
+            font-weight: 400;
+            background-color: $color-gray;
+            padding: 15px 10px;
+            border-top: 3px solid $color-light-orange;
+            margin-bottom: 0;
+            a {
+                color: $color-light-orange;
+            }
+            input[type="radio"] {
+                width: 15px;
+                height: 15px;
+                position: relative;
+                // top: 2px;
+                margin-left: 5px;
+            }
+            input {
+                border: 1px solid $color-line;
+                background: none;
+                height: 45px;
+                width: 90%;
+                padding: 0 20px;
+                outline: none;
+            }
+            label {
+                color: $color-black;
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+        .checkout_login {
+            .checkout_info {
+                border: 1px solid #ededed;
+                margin-top: 25px;
+                padding: 20px 30px;
+                p {
+                    margin-bottom: 15px;
+                }
+                a {
+                    color: #fdb813;
+                    margin-top: 15px;
+                    display: block;
+                }
+                form {
+                    .form_group {
+                        margin-bottom: 20px;
+                        label {
+                            font-size: 14px;
+                            display: block;
+                            line-height: 18px;
+                        }
+                        input {
+                            border: 1px solid $color-line;
+                            background: none;
+                            height: 45px;
+                            width: 350px;
+                            padding: 0 20px;
+                        }
+                        button {
+                            display: inline-block;
+                            width: 80px;
+                            background: #333;
+                            border: 0;
+                            color: #ffffff;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            font-size: 13px;
+                            -webkit-transition: 0.3s;
+                            transition: 0.3s;
+                            margin-left: 20px;
+                            cursor: pointer;
+                            height: 40px;
+                            line-height: 40px;
+                            border-radius: 3px;
+                        }
+                        input[type="checkbox"] {
+                            width: 15px;
+                            height: 15px;
+                            margin-left: 10px;
+                            position: relative;
+                            top: 3px;
+                        }
+                    }
+                    .form_group.group_3 {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        label {
+                            margin-bottom: 0;
+                            line-height: 34px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        #checkout_coupon {
+            input {
+                background: none;
+                border: 1px solid $color-line;
+                width: 200px;
+                height: 45px;
+                font-size: 12px;
+                padding: 0 20px;
+                color: $color-black;
+            }
+            button {
+                width: 130px;
+                background: $color-light-orange;
+                color: $white;
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 13px;
+                cursor: pointer;
+                -webkit-transition: 0.3s;
+                transition: 0.3s;
+                border: 0;
+                height: 45px;
+                line-height: 45px;
+                border-radius: 3px;
+                margin-right: 5px;
+            }
+        }
+    }
+    .checkout_form {
+        h3 {
+            font-size: 16px;
+            line-height: 30px;
+            padding: 5px 10px;
+            text-transform: uppercase;
+            color: $white;
+            background: $color-light-orange;
+            font-weight: 500;
+        }
+        label {
+            font-weight: 600;
+            margin: 10px;
+            span {
+                color: $color-light-orange;
+            }
+        }
+        input {
+            border: 1px solid $color-line;
+            background: none;
+            height: 40px;
+            width: 100%;
+            padding: 0 20px;
+            margin-bottom: 10px;
+            color: $color-black;
+        }
+        input[type="checkbox"] {
+            width: 15px;
+            height: 15px;
+            position: relative;
+            top: 2px;
+            margin-left: 10px;
+        }
+        .nice-select {
+            width: 100%;
+            margin-bottom: 10px;
+            select {
+                width: 100%;
+                height: 40px;
+                overflow: auto;
+            }
+        }
+        .nice-select::after {
+            top: 56%;
+        }
+        .card-body1 {
+            margin-bottom: 15px;
+        }
+        label.righ_0 {
+            cursor: pointer;
+            font-size: 15px;
+            line-height: 27px;
+            padding: 5px 10px;
+            text-transform: capitalize;
+            color: $white;
+            background: $color-light-orange;
+            font-weight: 500;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            margin-bottom: 0;
+            border-radius: 5px;
+        }
+        // //////
+        .order_table {
+            margin-bottom: 35px;
+            table {
+                width: 100%;
+                font-family: Vazir-Light-FD-WOL;
+                thead tr th {
+                    min-width: 50%;
+                    text-align: center;
+                    padding: 15px 0;
+                    border-bottom: 1px solid $color-line;
+                }
+                tbody tr td {
+                    min-width: 50%;
+                    text-align: center;
+                    padding: 15px 0;
+                    border-bottom: 1px solid $color-line;
+                }
+            }
+        }
+        .table-responsive {
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+            table {
+                thead {
+                    background: $color-gray;
+                    tr th {
+                        text-align: center;
+                    }
+                }
+                tbody tr td {
+                    border-left: 1px solid $color-line;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    font-size: 14px;
+                    text-align: center;
+                    min-width: 150px;
+                    font-family: Vazir-Light-FD-WOL;
+                }
+                tfoot tr {
+                    th {
+                        min-width: 50%;
+                        text-align: center;
+                        padding: 15px 0;
+                        border-bottom: 1px solid $color-line;
+                    }
+                    td {
+                        min-width: 50%;
+                        text-align: center;
+                        padding: 15px 0;
+                        border-bottom: 1px solid $color-line;
+                    }
+                }
+            }
+        }
+        .payment_method {
+            .panel-default {
+                input[type="radio"] {
+                    width: 15px;
+                    height: 15px;
+                    position: relative;
+                    top: 2px;
+                    margin-left: 10px;
+                }
+                .card-body1 {
+                    margin-bottom: 15px;
+                }
+            }
+            .order-notes {
+                label {
+                    line-height: 13px;
+                    margin: 20px 0;
+                }
+                textarea {
+                    border: 1px solid $color-line;
+                    border-radius: 0;
+                    height: 100px;
+                    max-width: 100%;
+                    padding: 0 20px 0 30px;
+                    background: none;
+                    font-size: 13px;
+                    resize: none;
+                    line-height: 45px;
+                    width: 100%;
+                    color: $color-black;
+                }
+            }
+            .order_button {
+                margin-top: 20px;
+                a {
+                    cursor: pointer;
+                    font-size: 16px;
+                    line-height: 30px;
+                    padding: 5px 10px;
+                    text-transform: capitalize;
+                    color: $white !important;
+                    background: $color-light-orange;
+                    font-weight: 500;
+                    -webkit-transition: 0.3s;
+                    transition: 0.3s;
+                    border-radius: 4px;
+                    border: 0;
+                }
+            }
+        }
+        .peyment_button {
+            margin-top: 20px;
+            a {
+                cursor: pointer;
+                font-size: 16px;
+                line-height: 30px;
+                padding: 5px 10px;
+                text-transform: capitalize;
+                color: $white !important;
+                background: $color-light-orange;
+                font-weight: 500;
+                -webkit-transition: 0.3s;
+                transition: 0.3s;
+                margin-top: 20px;
+                border-radius: 4px;
+                border: 0;
+            }
+        }
+    }
+}
