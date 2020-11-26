@@ -677,60 +677,52 @@
                     ul.categories_mega_menu {
                         position: absolute;
                         right: 100%;
-                        width: 600px;
+                        width: 300px;
                         background: $white;
-                        padding: 25px 20px 23px;
+                        padding: 25px 0;
                         overflow: hidden;
-                        top: -15px;
+                        top: -10px;
                         z-index: 99;
                         opacity: 0;
                         visibility: hidden;
-                        display: flex;
+                        // display: flex;
                         justify-content: space-between;
                         -webkit-box-shadow: -9px 9px 13px 6px rgba(153, 153, 191, 0.5);
                         -moz-box-shadow: -9px 9px 13px 6px rgba(153, 153, 191, 0.5);
                         box-shadow: -9px 9px 13px 6px rgba(153, 153, 191, 0.5);
                         border-radius: 5px 0 0 5px;
                         li {
-                            // padding: 0 15px;
                             a {
-                                line-height: 30px;
                                 font-size: 14px;
-                                font-weight: 500;
-                                text-transform: uppercase;
-                                display: block;
-                                cursor: pointer;
+                                font-weight: 700;
                             }
-                            .categorie_sub_menu li a {
-                                text-transform: capitalize;
-                                display: block;
-                                font-size: 14px;
-                                font-weight: 400;
-                                line-height: 30px;
+                            ul a {
+                                font-size: 14px !important;
+                                font-weight: 500 !important;
                             }
                         }
                         >li:first-child {
                             padding-right: 0;
                         }
                     }
-                    .categorie_sub {
-                        opacity: 0;
-                        z-index: 999;
-                        position: absolute;
-                        width: 100%;
-                        right: 0;
-                        background: #ffffff;
-                        -webkit-transition: .3s;
-                        transition: .3s;
-                        top: 65%;
-                        visibility: hidden;
+                    .categories_sub_menu {
+                        //     opacity: 0;
+                        //     z-index: 999;
+                        //     position: absolute;
+                        //     width: 100%;
+                        //     right: 0;
+                        //     background: $white;
+                        //     -webkit-transition: .3s;
+                        //     transition: .3s;
+                        //     top: 65%;
+                        //     visibility: hidden;
                         li a {
                             text-transform: capitalize;
                             font-size: 14px;
                             font-weight: 400;
-                            padding-right: 30px;
-                            display: block;
-                            line-height: 45px;
+                            // padding-right: 30px;
+                            // display: block;
+                            line-height: 40px;
                         }
                     }
                 }
