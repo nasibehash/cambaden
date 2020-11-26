@@ -677,7 +677,7 @@
                     ul.categories_mega_menu {
                         position: absolute;
                         right: 100%;
-                        width: 300px;
+                        width: 200px;
                         background: $white;
                         padding: 25px 0;
                         overflow: hidden;
@@ -694,7 +694,7 @@
                         li {
                             a {
                                 font-size: 14px;
-                                font-weight: 700;
+                                font-weight: 600;
                             }
                             ul a {
                                 font-size: 14px !important;
@@ -706,22 +706,10 @@
                         }
                     }
                     .categories_sub_menu {
-                        //     opacity: 0;
-                        //     z-index: 999;
-                        //     position: absolute;
-                        //     width: 100%;
-                        //     right: 0;
-                        //     background: $white;
-                        //     -webkit-transition: .3s;
-                        //     transition: .3s;
-                        //     top: 65%;
-                        //     visibility: hidden;
                         li a {
                             text-transform: capitalize;
                             font-size: 14px;
                             font-weight: 400;
-                            // padding-right: 30px;
-                            // display: block;
                             line-height: 40px;
                         }
                     }

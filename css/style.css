@@ -1153,7 +1153,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
           .header__bottom__categories--toggle ul li ul.categories_mega_menu {
             position: absolute;
             right: 100%;
-            width: 300px;
+            width: 200px;
             background: #fff;
             padding: 25px 0;
             overflow: hidden;
@@ -1168,7 +1168,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
             border-radius: 5px 0 0 5px; }
             .header__bottom__categories--toggle ul li ul.categories_mega_menu li a {
               font-size: 14px;
-              font-weight: 700; }
+              font-weight: 600; }
             .header__bottom__categories--toggle ul li ul.categories_mega_menu li ul a {
               font-size: 14px !important;
               font-weight: 500 !important; }
