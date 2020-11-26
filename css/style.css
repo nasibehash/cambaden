@@ -1514,12 +1514,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
         color: #fff; }
       .header .header__bottom__categories--toggle {
         position: absolute;
-        top: 42px;
-        right: -10px;
-        width: 35%; }
+        top: 47px;
+        right: -5px;
+        width: 55%; }
         .header .header__bottom__categories--toggle ul li a {
           padding-right: 5px;
-          padding-left: 5px; }
+          padding-left: 5px;
+          font-size: 12px; }
         .header .header__bottom__categories--toggle ul li ul.categories_mega_menu {
           width: 260px;
           padding: 20px 10px 23px;
