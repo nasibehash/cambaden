@@ -1126,7 +1126,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
         position: absolute;
         width: 100%;
         top: 50px;
-        left: 60px;
+        left: 50px;
         z-index: 9;
         display: none;
         padding: 15px 0;
@@ -1450,12 +1450,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
       font-size: 20px !important; }
     .header .header__bottom__categories--toggle {
       position: absolute;
-      top: 42px;
+      top: 59px;
       right: -10px;
       width: 40%; }
       .header .header__bottom__categories--toggle ul li a {
         padding-right: 5px;
-        padding-left: 5px; }
+        padding-left: 5px;
+        font-size: 15px; }
       .header .header__bottom__categories--toggle ul li ul.categories_mega_menu {
         width: 260px;
         padding: 20px 10px 23px;
@@ -1515,14 +1516,14 @@ ORDER: Base + typography > general layout + grid > page layout > components
       .header .header__bottom__categories--toggle {
         position: absolute;
         top: 47px;
-        right: -5px;
+        right: -10px;
         width: 55%; }
         .header .header__bottom__categories--toggle ul li a {
           padding-right: 5px;
           padding-left: 5px;
           font-size: 12px; }
         .header .header__bottom__categories--toggle ul li ul.categories_mega_menu {
-          width: 260px;
+          width: 195px;
           padding: 20px 10px 23px;
           margin-left: 10px; }
           .header .header__bottom__categories--toggle ul li ul.categories_mega_menu li a {

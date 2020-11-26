@@ -646,7 +646,7 @@
                 position: absolute;
                 width: 100%;
                 top: 50px;
-                left: 60px;
+                left: 50px;
                 z-index: 9;
                 display: none;
                 padding: 15px 0;
@@ -1083,14 +1083,14 @@
             }
             &--toggle {
                 position: absolute;
-                top: 42px;
+                top: 59px;
                 right: -10px;
                 width: 40%;
                 ul li {
                     a {
                         padding-right: 5px;
                         padding-left: 5px;
-                        // font-size: 12px;
+                        font-size: 15px;
                     }
                     ul.categories_mega_menu {
                         width: 260px;
@@ -1192,7 +1192,7 @@
                 &--toggle {
                     position: absolute;
                     top: 47px;
-                    right: -5px;
+                    right: -10px;
                     width: 55%;
                     ul li {
                         a {
@@ -1201,7 +1201,7 @@
                             font-size: 12px;
                         }
                         ul.categories_mega_menu {
-                            width: 260px;
+                            width: 195px;
                             padding: 20px 10px 23px;
                             margin-left: 10px;
                             li {

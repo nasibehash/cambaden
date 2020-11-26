@@ -122,18 +122,17 @@ $(document).ready(function() {
 
         e.preventDefault();
 
-        var x = document.getElementById("offcanvas_menu");
 
         var display = $("#offcanvas_menu").css('display');
 
-
-
         if (display == "none") {
             $("#offcanvas_menu").css('display', 'block');
-
+            $("#canvas_open").css('display', 'block');
 
         } else {
             $("#offcanvas_menu").css('display', 'none');
+            $("#canvas_open").css('display', 'block');
+
 
         }
 
@@ -143,15 +142,9 @@ $(document).ready(function() {
 
         e.preventDefault();
 
-        var x = document.getElementById("offcanvas_menu");
-
         var display = $("#offcanvas_menu").css('display');
 
-
-
-        if (display == "none") {
-            $("#offcanvas_menu").css('display', 'block')
-        } else {
+        if (display == "block") {
             $("#offcanvas_menu").css('display', 'none')
         }
 
@@ -174,11 +167,8 @@ $(document).ready(function() {
 
         e.preventDefault();
 
-        var x = document.getElementById("mini_cart");
 
         var display = $("#mini_cart").css('display');
-
-
 
         if (display == "none") {
             $("#mini_cart").css('display', 'block')
@@ -192,11 +182,7 @@ $(document).ready(function() {
 
         e.preventDefault();
 
-        var x = document.getElementById("mini_cart1");
-
         var display = $("#mini_cart1").css('display');
-
-
 
         if (display == "none") {
             $("#mini_cart1").css('display', 'block')
