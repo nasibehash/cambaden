@@ -61,25 +61,7 @@ function smoothScrollTo(yPos) {
     }, 3);
 }
 
-// (function scrollTop() {
-//     var goUpBtn = document.createElement('img');
-//     goUpBtn.src = "img/icon/top_arrow.png ";
-//     goUpBtn.id = "goUp";
-//     document.body.appendChild(goUpBtn);
 
-//     function setGoUpBtnVisibility() {
-//         if (window.scrollY <= 100) {
-//             goUpBtn.fadeOut();
-//         } else {
-//             goUpBtn.fadeIn();
-//         }
-//     }
-
-//     window.addEventListener('scroll', setGoUpBtnVisibility)
-//     goUpBtn.addEventListener('click', function() {
-//         smoothScrollTo(0)
-//     })
-// }())
 
 (function scrollTop() {
     var goUpBtn = document.createElement('i');
@@ -122,19 +104,18 @@ $(document).ready(function() {
 
         e.preventDefault();
 
-        console.log('heklo');
-        // var display = $("#offcanvas_menu").css('display');
+        var display = $("#offcanvas_menu").css('display');
 
-        // if (display == "none") {
-        //     $("#offcanvas_menu").css('display', 'block');
-        //     $("#canvas_open").css('display', 'block');
+        if (display == "none") {
+            $("#offcanvas_menu").css('display', 'block');
+            $("#canvas_open").css('display', 'block');
 
-        // } else {
-        //     $("#offcanvas_menu").css('display', 'none');
-        //     $("#canvas_open").css('display', 'block');
+        } else {
+            $("#offcanvas_menu").css('display', 'none');
+            $("#canvas_open").css('display', 'block');
 
 
-        // }
+        }
 
     }));
 
