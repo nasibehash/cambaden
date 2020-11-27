@@ -38,10 +38,6 @@
 
 /* ---------------------------------------- */
 
-// .off_canvars_overlay .active {
-//     opacity: 0.5;
-//     visibility: visible;
-// }
 .off_canvars_overlay {
     width: 100%;
     height: 100%;
@@ -69,6 +65,9 @@
         text-align: center;
         // border: 1px solid #333;
         // color: $color-light-orange !important;
+        color: $white !important;
+    }
+    a:hover {
         color: $white !important;
     }
 }
@@ -184,10 +183,10 @@
             .offcanvas_main_menu {
                 li {
                     position: relative;
-                    span.menu-expand {
-                        position: absolute;
-                        left: 0;
-                    }
+                    // span.menu-expand {
+                    //     position: absolute;
+                    //     left: 0;
+                    // }
                     ul.sub-menu {
                         padding-right: 20px;
                     }

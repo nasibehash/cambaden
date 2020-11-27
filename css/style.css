@@ -689,6 +689,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
     line-height: 40px;
     text-align: center;
     color: #fff !important; }
+  .canvas_open a:hover {
+    color: #fff !important; }
 
 .offcanvas_menu {
   display: none; }
@@ -781,9 +783,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
         font-family: Vazir-Light-FD-WOL; }
       .offcanvas_menu .offcanvas_menu_wrapper .customer_support .offcanvas_main_menu li {
         position: relative; }
-        .offcanvas_menu .offcanvas_menu_wrapper .customer_support .offcanvas_main_menu li span.menu-expand {
-          position: absolute;
-          left: 0; }
         .offcanvas_menu .offcanvas_menu_wrapper .customer_support .offcanvas_main_menu li ul.sub-menu {
           padding-right: 20px; }
         .offcanvas_menu .offcanvas_menu_wrapper .customer_support .offcanvas_main_menu li a {

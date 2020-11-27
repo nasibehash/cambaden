@@ -122,19 +122,19 @@ $(document).ready(function() {
 
         e.preventDefault();
 
+        console.log('heklo');
+        // var display = $("#offcanvas_menu").css('display');
 
-        var display = $("#offcanvas_menu").css('display');
+        // if (display == "none") {
+        //     $("#offcanvas_menu").css('display', 'block');
+        //     $("#canvas_open").css('display', 'block');
 
-        if (display == "none") {
-            $("#offcanvas_menu").css('display', 'block');
-            $("#canvas_open").css('display', 'block');
-
-        } else {
-            $("#offcanvas_menu").css('display', 'none');
-            $("#canvas_open").css('display', 'block');
+        // } else {
+        //     $("#offcanvas_menu").css('display', 'none');
+        //     $("#canvas_open").css('display', 'block');
 
 
-        }
+        // }
 
     }));
 
