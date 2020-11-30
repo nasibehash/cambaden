@@ -188,16 +188,33 @@ $(document).ready(function() {
 
 // ------------------------- hide all  open menu -----------------------
 
-$('#menu_open').on('click', (function(e) {
+// $('#menu_open').on('click', (function(e) {
 
-    e.preventDefault();
+//     e.preventDefault();
 
-    var display = $("#mega_menu_inner").css('display');
+//     var display = $("#mega_menu_inner").css('display');
 
-    if (display == "none") {
-        $("#mega_menu_inner").css('display', 'block')
-    } else {
-        $("#mega_menu_inner").css('display', 'none')
-    }
+//     if (display == "none") {
+//         $("#mega_menu_inner").css('display', 'block')
+//     } else {
+//         $("#mega_menu_inner").css('display', 'none')
+//     }
 
-}));
+// }));
+
+
+
+
+var acc = document.getElementsByClassName("menu_open");
+var i;
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        // this.classList.toggle("active");
+        var x = this.childNodes[2];
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    });
+}
