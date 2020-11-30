@@ -172,18 +172,32 @@ $(document).ready(function() {
         }
 
     }));
-    // $(document).on('click', 'body, #cart-btn1', function(ev) {
+    // $(document).on('click', 'body, #cart-btn', function(ev) {
     //     ev.stopPropagation()
-    //     if (ev.target.id == "cart-btn1") {
-    //         if ($('#mini_cart1').is(':visible')) {
-    //             $('#mini_cart1').fadeOut();
+    //     if (ev.target.id == "cart-btn") {
+    //         if ($('#mini_cart').is(':visible')) {
+    //             $('#mini_cart').fadeOut();
     //         } else {
-    //             $('#mini_cart1').fadeIn();
+    //             $('#mini_cart').fadeIn();
     //         }
     //     } else {
-    //         $('#mini_cart1').fadeOut();
+    //         $('#mini_cart').fadeOut();
     //     }
     // });
 });
 
 // ------------------------- hide all  open menu -----------------------
+
+$('#menu_open').on('click', (function(e) {
+
+    e.preventDefault();
+
+    var display = $("#mega_menu_inner").css('display');
+
+    if (display == "none") {
+        $("#mega_menu_inner").css('display', 'block')
+    } else {
+        $("#mega_menu_inner").css('display', 'none')
+    }
+
+}));

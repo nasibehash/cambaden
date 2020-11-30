@@ -922,9 +922,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
         display: block; }
       .offcanvas_menu .offcanvas_menu_wrapper nav ul li a:hover {
         border-bottom: 2px solid #e9755c; }
-      .offcanvas_menu .offcanvas_menu_wrapper nav ul li:hover > ul {
-        display: block;
-        transition: ease-in-out .5s; }
       .offcanvas_menu .offcanvas_menu_wrapper nav ul li a.active {
         color: #e9755c !important; }
       .offcanvas_menu .offcanvas_menu_wrapper nav ul li {

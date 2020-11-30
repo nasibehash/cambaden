@@ -365,10 +365,10 @@
             ul li a:hover {
                 border-bottom: 2px solid $color-light-orange;
             }
-            ul li:hover>ul {
-                display: block;
-                transition: ease-in-out .5s;
-            }
+            // ul li:hover>ul {
+            //     display: block;
+            //     transition: ease-in-out .5s;
+            // }
             ul li a.active {
                 color: $color-light-orange !important;
             }
