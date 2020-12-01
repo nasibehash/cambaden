@@ -136,13 +136,6 @@ $(document).ready(function() {
     // ---------- end -------------------
 
 
-    // $('div').each(function(){
-
-    //     if ( $(this).css('display') == 'none')
-    //     {
-    //        //do something
-    //     }
-    // });
 
     $('#cart-btn').on('click', (function(e) {
 
@@ -172,18 +165,7 @@ $(document).ready(function() {
         }
 
     }));
-    // $(document).on('click', 'body, #cart-btn', function(ev) {
-    //     ev.stopPropagation()
-    //     if (ev.target.id == "cart-btn") {
-    //         if ($('#mini_cart').is(':visible')) {
-    //             $('#mini_cart').fadeOut();
-    //         } else {
-    //             $('#mini_cart').fadeIn();
-    //         }
-    //     } else {
-    //         $('#mini_cart').fadeOut();
-    //     }
-    // });
+
 });
 
 // ------------------------- hide all  open menu -----------------------
@@ -203,18 +185,30 @@ $(document).ready(function() {
 // }));
 
 
+// $('#menu_open-inner').on('click', (function(e) {
 
+//     e.preventDefault();
 
-// var acc = document.getElementsByClassName("menu_open");
-// var i;
-// for (i = 0; i < acc.length; i++) {
-//     acc[i].addEventListener("click", function() {
-//         // this.classList.toggle("active");
-//         var x = this.childNodes[2];
-//         if (x.style.display === "block") {
-//             x.style.display = "none";
-//         } else {
-//             x.style.display = "block";
-//         }
-//     });
-// }
+//     var display = $("#mega_menu_inner-inner").css('display');
+
+//     if (display == "block") {
+//         $("#mega_menu_inner-inner").css('display', 'none')
+//     } else {
+//         $("#mega_menu_inner-inner").css('display', 'block')
+//     }
+
+// }));
+
+var acc = document.getElementsByClassName("menu_open");
+var i;
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        // this.classList.toggle("active");
+        var x = this.childNodes[2];
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    });
+}
