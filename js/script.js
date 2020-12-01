@@ -205,16 +205,16 @@ $(document).ready(function() {
 
 
 
-var acc = document.getElementsByClassName("menu_open");
-var i;
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        // this.classList.toggle("active");
-        var x = this.childNodes[2];
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-    });
-}
+// var acc = document.getElementsByClassName("menu_open");
+// var i;
+// for (i = 0; i < acc.length; i++) {
+//     acc[i].addEventListener("click", function() {
+//         // this.classList.toggle("active");
+//         var x = this.childNodes[2];
+//         if (x.style.display === "block") {
+//             x.style.display = "none";
+//         } else {
+//             x.style.display = "block";
+//         }
+//     });
+// }
