@@ -372,6 +372,7 @@
             body.nontouch ul li:hover>ul {
                 display: block;
                 transition: ease-in-out .5s;
+                color: lawngreen !important;
             }
             ul li a.active {
                 color: $color-light-orange !important;
