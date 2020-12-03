@@ -388,3 +388,24 @@
         }
     }
 }
+
+@media only screen and (max-width: 481px) and (min-width: 375px) {
+    .section__address {
+        .user-actions {
+            h3 {
+                .container {
+                    margin-right: 20px;
+                }
+                input {
+                    width: 10%;
+                }
+            }
+        }
+        .checkout_form {
+            .righ_0 {
+                font-size: 12px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
