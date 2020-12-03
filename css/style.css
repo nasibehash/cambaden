@@ -9755,22 +9755,62 @@ a.text-dark:hover, a.text-dark:focus {
       margin-bottom: 0; }
       .section__address .user-actions h3 a {
         color: #e9755c; }
-      .section__address .user-actions h3 input[type="radio"] {
-        width: 15px;
-        height: 15px;
-        position: relative;
-        margin-left: 5px; }
+      .section__address .user-actions h3 p {
+        font-size: 13px;
+        margin-right: 50px; }
       .section__address .user-actions h3 input {
         border: 1px solid rgba(0, 0, 0, 0.1);
-        background: none;
+        background: #fff !important;
         height: 45px;
-        width: 90%;
+        width: 100%;
         padding: 0 20px;
-        outline: none; }
-      .section__address .user-actions h3 label {
-        color: #333;
-        font-size: 14px;
-        font-weight: bold; }
+        outline: none;
+        opacity: 1; }
+      .section__address .user-actions h3 .container {
+        display: block;
+        position: relative;
+        padding-left: 25px;
+        padding-top: 10px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        font-size: 15px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin-right: 30px;
+        /* On mouse-over, add a grey background color */
+        /* When the radio button is checked, add a blue background */
+        /* Create the indicator (the dot/circle - hidden when not checked) */
+        /* Show the indicator (dot/circle) when checked */
+        /* Style the indicator (dot/circle) */ }
+        .section__address .user-actions h3 .container input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer; }
+        .section__address .user-actions h3 .container .checkmark {
+          position: absolute;
+          top: 10px;
+          right: -10px;
+          height: 20px;
+          width: 20px;
+          background-color: #fff;
+          border-radius: 50%; }
+        .section__address .user-actions h3 .container input:checked ~ .checkmark {
+          background-color: #e9755c; }
+        .section__address .user-actions h3 .container .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none; }
+        .section__address .user-actions h3 .container input:checked ~ .checkmark:after {
+          display: block; }
+        .section__address .user-actions h3 .container .checkmark:after {
+          top: 6.5px;
+          left: 6.5px;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: white; }
     .section__address .user-actions .checkout_login .checkout_info {
       border: 1px solid #ededed;
       margin-top: 25px;
@@ -9924,7 +9964,7 @@ a.text-dark:hover, a.text-dark:focus {
   .section__address .checkout_form .order-notes textarea {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0;
-    height: 100px;
+    height: 200px;
     max-width: 100%;
     padding: 0 20px 0 30px;
     background: none;
@@ -10271,3 +10311,175 @@ a.text-dark:hover, a.text-dark:focus {
       margin-top: 20px;
       border-radius: 4px;
       border: 0; }
+
+.section__payment form .table_desc {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px; }
+  .section__payment form .table_desc .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar; }
+    .section__payment form .table_desc .table-responsive table thead {
+      background: #c2bfbf91; }
+      .section__payment form .table_desc .table-responsive table thead tr th {
+        text-align: center; }
+    .section__payment form .table_desc .table-responsive table tbody tr td {
+      border-left: 1px solid rgba(0, 0, 0, 0.1);
+      font-weight: 500;
+      text-transform: capitalize;
+      font-size: 14px;
+      text-align: center;
+      min-width: 150px;
+      font-family: Vazir-Light-FD-WOL; }
+  .section__payment form .table_desc .cart_page table {
+    width: 100%; }
+    .section__payment form .table_desc .cart_page table thead tr:last-child th {
+      border-left: 0; }
+    .section__payment form .table_desc .cart_page table thead tr th {
+      border-bottom: 3px solid #e9755c;
+      border-left: 1px solid rgba(0, 0, 0, 0.1);
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: capitalize;
+      padding: 10px;
+      text-align: center; }
+    .section__payment form .table_desc .cart_page table thead tr .product_thumb {
+      position: relative;
+      overflow: hidden;
+      text-align: center; }
+    .section__payment form .table_desc .cart_page table thead tr .product_thumb::before {
+      content: "";
+      position: absolute;
+      right: 20px;
+      left: 20px;
+      bottom: 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      z-index: 1; }
+    .section__payment form .table_desc .cart_page table tbody tr td:last-child {
+      border-left: 0; }
+    .section__payment form .table_desc .cart_page table tbody tr td.product_remove {
+      min-width: 100px; }
+      .section__payment form .table_desc .cart_page table tbody tr td.product_remove a {
+        font-size: 20px;
+        color: #e9755c; }
+    .section__payment form .table_desc .cart_page table tbody tr td {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      border-left: 1px solid rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 10px; }
+    .section__payment form .table_desc .cart_page table tbody tr td.product_thumb {
+      max-width: 180px; }
+    .section__payment form .table_desc .cart_page table tbody tr td.product_name {
+      min-width: 180px; }
+    .section__payment form .table_desc .cart_page table tbody tr td.product-price {
+      min-width: 130px;
+      color: #e9755c;
+      font-size: 16px;
+      font-weight: 500; }
+    .section__payment form .table_desc .cart_page table tbody tr td.product_quantity {
+      min-width: 180px; }
+      .section__payment form .table_desc .cart_page table tbody tr td.product_quantity label {
+        font-weight: 600;
+        margin-left: 5px; }
+      .section__payment form .table_desc .cart_page table tbody tr td.product_quantity input {
+        width: 60px;
+        height: 40px;
+        padding: 0 10px 0 5px;
+        background: none;
+        border: 1px solid rgba(0, 0, 0, 0.1); }
+  .section__payment form .table_desc .cart_submit {
+    padding: 12px; }
+    .section__payment form .table_desc .cart_submit button {
+      background: #e9755c;
+      border: 0;
+      color: #fff;
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      height: 38px;
+      line-height: 18px;
+      padding: 10px 15px;
+      text-transform: uppercase;
+      cursor: pointer;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+      border-radius: 3px; }
+
+.section__payment .info_area .info_code {
+  border: 1px solid rgba(0, 0, 0, 0.1); }
+  .section__payment .info_area .info_code h3 {
+    color: #fff;
+    line-height: 36px;
+    padding: 5px 15px;
+    background: #e9755c;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600; }
+  .section__payment .info_area .info_code .info_inner {
+    padding: 20px 20px 25px; }
+    .section__payment .info_area .info_code .info_inner div {
+      padding-bottom: 20px; }
+    .section__payment .info_area .info_code .info_inner p {
+      font-size: 13px;
+      margin-bottom: 20px;
+      display: inline; }
+    .section__payment .info_area .info_code .info_inner label {
+      font-size: 14px;
+      font-weight: 700;
+      display: inline;
+      padding: 10px; }
+    .section__payment .info_area .info_code .info_inner textarea {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 0;
+      height: 200px;
+      max-width: 100%;
+      padding: 0 20px 0 30px;
+      margin-top: 20px;
+      background: none;
+      font-size: 13px;
+      resize: none;
+      line-height: 45px;
+      width: 100%;
+      color: #333; }
+    .section__payment .info_area .info_code .info_inner input {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      height: 42px;
+      background: none;
+      padding: 0 20px;
+      margin-left: 20px;
+      font-size: 12px;
+      color: #e9755c;
+      width: 75%; }
+    .section__payment .info_area .info_code .info_inner button {
+      background: #e9755c;
+      border: 0;
+      color: #fff;
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      height: 38px;
+      line-height: 18px;
+      padding: 10px 15px;
+      text-transform: uppercase;
+      cursor: pointer;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+      border-radius: 3px; }
+
+.section__payment .info_area .payment_btn {
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 20px; }
+  .section__payment .info_area .payment_btn a {
+    background: #e9755c;
+    font-size: 15px;
+    padding: 3px 14px;
+    line-height: 30px;
+    font-weight: 700;
+    display: inline-block;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    border-radius: 4px;
+    color: #fff !important; }

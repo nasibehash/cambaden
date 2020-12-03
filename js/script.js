@@ -173,5 +173,19 @@ $(document).ready(function() {
         });
     }
 
+    // --------------- ADDRESS BUTTON ------------------
+    $('.test').on('click', (function() {
+
+        // $("#address-area").toggle(this.checked);
+        $("#address-area").hide(this.checked);
+    }));
+
+    $('.test2').on('click', (function() {
+
+        // $("#address-area").toggle(this.checked);
+        $("#address-area").show(this.checked);
+    }));
 
 });
+
+// $("#radio_1").attr('checked', 'checked');

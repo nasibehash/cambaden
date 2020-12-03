@@ -113,11 +113,8 @@
                                     <div class="cart_button">
                                         <a href="checkout.html">پرداخت</a>
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
                         <nav class="text-right">
                             <div id="navbarCollapse">
@@ -456,55 +453,22 @@
                     <div class="col-12">
                         <div class="user-actions">
                             <h3>
-                                <!-- <i class="fa fa-file" aria-hidden="true"></i> مشتری برگشتی؟
-                                <a class="Returning" href="#" data-toggle="collapse" data-target="#checkout_login" aria-expanded="true">برای ورود اینجا کلیک کنید</a> -->
-                                <input id="account" type="radio" data-target="createp_account">
-                                <label for="account" data-toggle="collapse" data-target="#collapseOne" aria-controls="collapseOne">آدرس:</label>
-                                <input type="text">
-
-
-                            </h3>
-                            <!-- <div id="checkout_login" class="collapse" data-parent="#accordion">
-                                <div class="checkout_info">
-                                    <p>اگر قبلاً با ما خرید کرده اید ، لطفاً جزئیات خود را در جعبه های زیر وارد کنید. اگر مشتری جدیدی هستید ، لطفاً وارد بخش صورتحساب و حمل و نقل شوید.</p>
-                                    <form action="#">
-                                        <div class="form_group">
-                                            <label>نام کاربری یا ایمیل <span>*</span></label>
-                                            <input type="text">
-                                        </div>
-                                        <div class="form_group">
-                                            <label>رمز عبور <span>*</span></label>
-                                            <input type="text">
-                                        </div>
-                                        <div class="form_group group_3 ">
-                                            <button type="submit">ورود</button>
-                                            <label for="remember_box">
-                                                <input id="remember_box" type="checkbox">
-                                                <span> مرا به خاطر بسپار </span>
-                                            </label>
-                                        </div>
-                                        <a href="#">فراموشی رمز عبور</a>
-                                    </form>
-                                </div>
-                            </div> -->
-                        </div>
-                        <div class="user-actions">
-                            <h3>
-                                <!-- <i class="fa fa-file" aria-hidden="true"></i> مشتری برگشتی؟
-                                <a class="Returning" href="#" data-toggle="collapse" data-target="#checkout_coupon" aria-expanded="true">برای وارد کردن کد خود اینجا را کلیک کنید</a> -->
-                                <input id="account" type="radio" data-target="createp_account">
-                                <label for="account" data-toggle="collapse" data-target="#collapseOne" aria-controls="collapseOne">آدرس:</label>
-                                <input type="text">
+                                <label class="container test"> آدرس یک:
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                <p>تهران , مرزداران و خیابان سپهر</p>
+                                <label class="container test"> آدرس دو:
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                <p>تهران , مرزداران و خیابان سپهر</p>
+                                <label class="container test2">افزودن آدرس جدید
+                                    <input type="radio"  checked="checked" name="radio">
+                                    <span  id="add-address" class="checkmark"></span>
+                                  </label>
 
                             </h3>
-                            <!-- <div id="checkout_coupon" class="collapse" data-parent="#accordion">
-                                <div class="checkout_info">
-                                    <form action="#">
-                                        <input placeholder="کد تخفیف" type="text">
-                                        <button type="submit">اعمال کد</button>
-                                    </form>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -512,8 +476,7 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
                             <form action="#">
-                                <h3>اضافه کردن آدرس جدید</h3>
-                                <div class="row">
+                                <div id="address-area" class="row">
 
                                     <div class="col-lg-6 mb-20">
                                         <label>نام <span>*</span></label>
@@ -524,12 +487,19 @@
                                         <input type="text" placeholder="نام خانوادگی">
                                     </div>
 
-                                    <!-- <div class="col-12 mb-20 nice-select">
-                                        <label for="country">کشور <span>*</span></label>
+                                    <div class="col-12 mb-20">
+                                        <label>آدرس خیابان <span>*</span></label>
+                                        <input placeholder="شماره خیابان یا آدرس خانه" type="text">
+                                    </div>
+                                    <div class="col-12 mb-20">
+                                        <input placeholder="محله قزلناو، کوچه شهید عباسی" type="text">
+                                    </div>
+                                    <div class="col-12 mb-20 nice-select">
+                                        <label for="country">استان <span>*</span></label>
 
                                         <form class="select_option" action="#">
-                                            <select name="country" class="form-control  niceselect_option" id="short">
-                                                    <option value="1">کشور</option>
+                                            <select name="province" class="form-control  niceselect_option" id="province">
+                                                    <option value="1">---</option>
                                                     <option value="2">ایران</option>
                                                     <option value="3">الجزیره</option>
                                                     <option value="4">افغناستان</option>
@@ -540,29 +510,34 @@
                                                     <option value="9">چک</option>
                                                 </select>
                                         </form>
-                                    </div> -->
+                                    </div>
+                                    <div class="col-12 mb-20 nice-select">
+                                        <label for="country">شهر <span>*</span></label>
 
-                                    <div class="col-12 mb-20">
-                                        <label>آدرس خیابان <span>*</span></label>
-                                        <input placeholder="شماره خیابان یا آدرس خانه" type="text">
-                                    </div>
-                                    <div class="col-12 mb-20">
-                                        <input placeholder="محله قزلناو، کوچه شهید عباسی" type="text">
+                                        <form class="select_option" action="#">
+                                            <select name="city" class="form-control  niceselect_option" id="city">
+                                                    <option value="1">---</option>
+                                                    <option value="2">ایران</option>
+                                                    <option value="3">الجزیره</option>
+                                                    <option value="4">افغناستان</option>
+                                                    <option value="5">غنا</option>
+                                                    <option value="6">آلبانی</option>
+                                                    <option value="7">بحرین</option>
+                                                    <option value="8">کلیمبا</option>
+                                                    <option value="9">چک</option>
+                                                </select>
+                                        </form>
                                     </div>
                                     <div class="col-lg-6 mb-20">
-                                        <label>محل / شهر <span>*</span></label>
-                                        <input type="text" placeholder="محل /شهر">
-                                    </div>
-                                    <div class="col-lg-6 mb-20">
-                                        <label>شهر / کشور <span>*</span></label>
-                                        <input type="text" placeholder="شهر / کشور">
-                                    </div>
-                                    <div class="col-lg-6 mb-20">
-                                        <label>تلفن<span>*</span></label>
+                                        <label> تلفن ثابت<span>*</span></label>
                                         <input type="text" placeholder="تلفن">
                                     </div>
                                     <div class="col-lg-6 mb-20">
-                                        <label>کد پستی</label>
+                                        <label>تلفن همراه<span>*</span></label>
+                                        <input type="text" placeholder="موبایل">
+                                    </div>
+                                    <div class="col-lg-6 mb-20">
+                                        <label>کد پستی<span>*</span></label>
                                         <input type="text" placeholder="کد پستی">
                                     </div>
                                     <div class="col-lg-6 mb-20">
@@ -572,7 +547,6 @@
                                     </div>
 
                                     <div class="col-12 mb-20">
-                                        <!-- <input id="address" type="checkbox" data-target="createp_account"> -->
                                         <a class="righ_0" type="submit"> ایجاد آدرس جدید</a>
 
                                     </div>
