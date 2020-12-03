@@ -13,81 +13,82 @@ $(document).ready(function() {
     });
 
 
-});
-// Fade Animations
-function myFadeIn(elem) {
-    var elemOpacity = Number(getComputedStyle(elem).opacity).toPrecision(2);
-    elem.style.opacity = elemOpacity;
-    if (elemOpacity >= 1) {
-        return;
-    }
-    elem.style.opacity = Number(elemOpacity) + 0.01;
-    setTimeout(function() {
-        myFadeIn(elem)
-    }, 10)
-}
 
-function myFadeOut(elem) {
-    var elemOpacity = Number(getComputedStyle(elem).opacity).toPrecision(2);
-    elem.style.opacity = elemOpacity;
-    if (elemOpacity <= 0) {
-        return;
-    }
-    elem.style.opacity = Number(elemOpacity) - 0.01;
-    setTimeout(function() {
-        myFadeOut(elem)
-    }, 10)
-}
-Element.prototype.fadeIn = function() {
-    myFadeIn(this);
-}
-Element.prototype.fadeOut = function() {
-    myFadeOut(this);
-}
-
-
-// smoothScroll
-function smoothScrollTo(yPos) {
-    var step = 20;
-    if (yPos < scrollY) {
-        step *= -1;
-    }
-    if (Math.abs(yPos - scrollY) <= step) { // stop Condition
-        return;
-    }
-    window.scrollBy(0, step);
-    setTimeout(function() {
-        smoothScrollTo(yPos)
-    }, 3);
-}
-
-
-
-(function scrollTop() {
-    var goUpBtn = document.createElement('i');
-    // goUpBtn.src = "img/icon/top_arrow.png ";
-    goUpBtn.className = "fas fa-angle-double-up";
-    goUpBtn.id = "goUp";
-    document.body.appendChild(goUpBtn);
-
-    function setGoUpBtnVisibility() {
-        if (window.scrollY <= 100) {
-            goUpBtn.fadeOut();
-        } else {
-            goUpBtn.fadeIn();
+    // Fade Animations
+    function myFadeIn(elem) {
+        var elemOpacity = Number(getComputedStyle(elem).opacity).toPrecision(2);
+        elem.style.opacity = elemOpacity;
+        if (elemOpacity >= 1) {
+            return;
         }
+        elem.style.opacity = Number(elemOpacity) + 0.01;
+        setTimeout(function() {
+            myFadeIn(elem)
+        }, 10)
     }
 
-    window.addEventListener('scroll', setGoUpBtnVisibility)
-    goUpBtn.addEventListener('click', function() {
-        smoothScrollTo(0)
-    })
-}());
+    function myFadeOut(elem) {
+        var elemOpacity = Number(getComputedStyle(elem).opacity).toPrecision(2);
+        elem.style.opacity = elemOpacity;
+        if (elemOpacity <= 0) {
+            return;
+        }
+        elem.style.opacity = Number(elemOpacity) - 0.01;
+        setTimeout(function() {
+            myFadeOut(elem)
+        }, 10)
+    }
+    Element.prototype.fadeIn = function() {
+        myFadeIn(this);
+    }
+    Element.prototype.fadeOut = function() {
+        myFadeOut(this);
+    }
 
 
-$(document).ready(function() {
+    // smoothScroll
+    function smoothScrollTo(yPos) {
+        var step = 20;
+        if (yPos < scrollY) {
+            step *= -1;
+        }
+        if (Math.abs(yPos - scrollY) <= step) { // stop Condition
+            return;
+        }
+        window.scrollBy(0, step);
+        setTimeout(function() {
+            smoothScrollTo(yPos)
+        }, 3);
+    }
 
-    $(document).on('click', 'body, #header__bottom__categories--title', function(ev) {
+
+
+    (function scrollTop() {
+        var goUpBtn = document.createElement('i');
+        // goUpBtn.src = "img/icon/top_arrow.png ";
+        goUpBtn.className = "fas fa-angle-double-up";
+        goUpBtn.id = "goUp";
+        document.body.appendChild(goUpBtn);
+
+        function setGoUpBtnVisibility() {
+            if (window.scrollY <= 100) {
+                goUpBtn.fadeOut();
+            } else {
+                goUpBtn.fadeIn();
+            }
+        }
+
+        window.addEventListener('scroll', setGoUpBtnVisibility)
+        goUpBtn.addEventListener('click', function() {
+            smoothScrollTo(0)
+        })
+    }());
+
+
+
+    // ---------------- CATEGORIES TOGGLE -------------------
+
+    $('#header__bottom__categories--title,body').on('click', (function(ev) {
         ev.stopPropagation()
         if (ev.target.id == "header__bottom__categories--title") {
             if ($('#header__bottom__categories--toggle').is(':visible')) {
@@ -98,8 +99,11 @@ $(document).ready(function() {
         } else {
             $('#header__bottom__categories--toggle').fadeOut();
         }
-    });
-    // ----------menu toggle
+    }));
+
+
+    // ---------- MENU TOGGLE ---------------
+
     $('#canvas_open').on('click', (function(e) {
 
         e.preventDefault();
@@ -133,82 +137,41 @@ $(document).ready(function() {
 
 
 
-    // ---------- end -------------------
+    // ---------- CART TOGGLE ------------------
 
 
+    $('#cart-btn,body').on('click', (function(ev) {
 
-    $('#cart-btn').on('click', (function(e) {
+        ev.stopPropagation()
 
-        e.preventDefault();
-
-
-        var display = $("#mini_cart").css('display');
-
-        if (display == "none") {
-            $("#mini_cart").css('display', 'block')
+        if (ev.target.id == "cart-icon") {
+            if ($('#mini_cart').is(':visible')) {
+                $('#mini_cart').fadeOut();
+            } else {
+                $('#mini_cart').fadeIn();
+            }
         } else {
-            $("#mini_cart").css('display', 'none')
+            $('#mini_cart').fadeOut();
         }
 
-    }));
-    // -------- cart menu responsive
-    $('#cart-btn1').on('click', (function(e) {
-
-        e.preventDefault();
-
-        var display = $("#mini_cart1").css('display');
-
-        if (display == "none") {
-            $("#mini_cart1").css('display', 'block')
-        } else {
-            $("#mini_cart1").css('display', 'none')
-        }
 
     }));
+
+    // ---------- RESPONSIVE HEADER NAV -------------
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        });
+    }
+
 
 });
-
-// ------------------------- hide all  open menu -----------------------
-
-// $('#menu_open').on('click', (function(e) {
-
-//     e.preventDefault();
-
-//     var display = $("#mega_menu_inner").css('display');
-
-//     if (display == "none") {
-//         $("#mega_menu_inner").css('display', 'block')
-//     } else {
-//         $("#mega_menu_inner").css('display', 'none')
-//     }
-
-// }));
-
-
-// $('#menu_open-inner').on('click', (function(e) {
-
-//     e.preventDefault();
-
-//     var display = $("#mega_menu_inner-inner").css('display');
-
-//     if (display == "block") {
-//         $("#mega_menu_inner-inner").css('display', 'none')
-//     } else {
-//         $("#mega_menu_inner-inner").css('display', 'block')
-//     }
-
-// }));
-
-var acc = document.getElementsByClassName("menu_open");
-var i;
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        // this.classList.toggle("active");
-        var x = this.childNodes[2];
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-    });
-}

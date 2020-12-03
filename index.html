@@ -120,55 +120,45 @@
                             </div>
 
                         </div>
-                        <nav class="text-right">
-                            <div id="navbarCollapse">
-                                <ul>
-                                    <li><a class="active" href="index.html">صفحه اصلی</a></li>
-                                    <li><a href="shop.html">فروشگاه</a></li>
+                        <div class="nav--bar">
+                            <a class="active" href="index.html">صفحه اصلی</a>
+                            <a href="shop.html">فروشگاه</a>
 
-                                    <li id="menu_open" class="menu_open"><span><i class="fa fa-angle-down"></i></span> راهکارها
-                                        <ul id="mega_menu_inner" class="mega_menu_inner">
-                                            <li class="menu_open" id="menu_open"><a><span></span>راهکار یک<i class="fa fa-angle-down"></i></a>
-                                                <ul class="mega_menu_inner" id="mega_menu_inner">
-                                                    <li><a href="#">عرض کامل</a></li>
-                                                    <li><a href="#">لیست کامل عرض </a> </li>
-                                                    <li><a href="#">نوار کناری راست </a></li>
-                                                    <li><a href="#"> لیست نوار سمت راست </a> </li>
-                                                    <li><a href="#">نمای لیست </a> </li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu_open" id="menu_open"><a href="#">راهکار دو <i class="fa fa-angle-down"></i></a>
-                                                <ul class="mega_menu_inner" id="mega_menu_inner">
-                                                    <li><a href="#">سبد خرید </a> </li>
-                                                    <li><a href="#">لیست دلخواه </a> </li>
-                                                    <li><a href="#">پرداخت </a> </li>
-                                                    <li><a href="#">حساب من </a> </li>
-                                                    <li><a href="#">خطای 404 </a> </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-
-                                    </li>
-                                    <li id="menu_open" class="menu_open"><span><i class="fa fa-angle-down"></i></span> خدمات
-                                        <ul id="mega_menu_inner" class="mega_menu_inner">
-                                            <li><a href="#">خدمات 1</a>
-
-                                            </li>
-                                            <li><a href="#">خدمات 2</a>
-
-                                            </li>
-                                            <li><a href="#">خدمات 3</a>
-
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="blog.html">بلاگ</a>
-                                    </li>
-                                    <li><a href="about.html">درباره ما </a> </li>
-                                    <li><a href="contact.html"> تماس با ما</a></li>
-                                </ul>
+                            <button class="dropdown-btn">راهکارها<i class="fa fa-angle-down"></i> 
+                             </button>
+                            <div class="dropdown-container">
+                                <button class="dropdown-btn">راهکار یک<i class="fa fa-angle-down"></i> 
+                                </button>
+                                <div class="dropdown-container">
+                                    <a href="#">عرض کامل</a>
+                                    <a href="#">لیست کامل عرض </a>
+                                    <a href="#">نوار کناری راست </a>
+                                    <a href="#"> لیست نوار سمت راست </a>
+                                    <a href="#">نمای لیست </a>
+                                </div>
+                                <button class="dropdown-btn">راهکار دو<i class="fa fa-angle-down"></i> 
+                                </button>
+                                <div class="dropdown-container">
+                                    <a href="#">سبد خرید </a>
+                                    <a href="#">لیست دلخواه </a>
+                                    <a href="#">پرداخت </a>
+                                    <a href="#">حساب من </a>
+                                    <a href="#">خطای 404 </a>
+                                </div>
                             </div>
-                        </nav>
+
+                            <button class="dropdown-btn">خدمات<i class="fa fa-angle-down"></i> 
+                             </button>
+                            <div class="dropdown-container">
+                                <a href="#">خدمات 1</a>
+                                <a href="#">خدمات 2</a>
+                                <a href="#">خدمات 3</a>
+                            </div>
+                            <a href="blog.html">بلاگ</a>
+                            <a href="about.html">درباره ما </a>
+                            <a href="contact.html"> تماس با ما</a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -365,11 +355,10 @@
                                     <span class="favorite_quantity">3</span>
                                 </div>
                                 <div id="cart-btn">
-                                    <a href="#"> <i class="fa fa-shopping-cart"></i></a>
+                                    <a href="#"> <i class="fa fa-shopping-cart" id="cart-icon"></i></a>
                                     <span class="cart_quantity">3</span>
                                 </div>
-                                <!-- <button id="cart-btn"><a href="#"> <i class="fa fa-shopping-cart"></i></a>
-                                    <span class="cart_quantity">3</span></button> -->
+
                                 <!-- cart -->
                                 <div id="mini_cart">
                                     <div class="cart_item">
