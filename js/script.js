@@ -157,6 +157,21 @@ $(document).ready(function() {
 
     }));
 
+    $('#cart-btn1').on('click', (function(e) {
+
+        e.preventDefault();
+
+        var display = $("#mini_cart1").css('display');
+        console.log(display);
+        if (display == "block") {
+            $("#mini_cart1").css('display', 'none')
+        } else {
+            $("#mini_cart1").css('display', 'block')
+
+        }
+
+    }));
+
     // ---------- RESPONSIVE HEADER NAV -------------
     var dropdown = document.getElementsByClassName("dropdown-btn");
     var i;
@@ -176,16 +191,12 @@ $(document).ready(function() {
     // --------------- ADDRESS BUTTON ------------------
     $('.address').on('click', (function() {
 
-        // $("#address-area").toggle(this.checked);
         $("#address-area").hide(this.checked);
     }));
 
     $('.new-address').on('click', (function() {
 
-        // $("#address-area").toggle(this.checked);
         $("#address-area").show(this.checked);
     }));
 
 });
-
-// $("#radio_1").attr('checked', 'checked');

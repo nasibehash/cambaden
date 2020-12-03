@@ -169,6 +169,7 @@
                     cursor: pointer;
                     -webkit-transition: 0.3s;
                     transition: 0.3s;
+                    margin-top: 10px;
                     border-radius: 3px;
                 }
                 .cart_subtotal {
@@ -232,6 +233,23 @@
                         width: 65%;
                         // margin-bottom: 30px;
                         // margin-top: 10px;
+                    }
+                    button {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 481px) and (min-width: 374) {
+    .section__shopping_cart {
+        .coupon_area {
+            .coupon_code {
+                .coupon_inner {
+                    button {
+                        margin-top: 10px;
                     }
                 }
             }
