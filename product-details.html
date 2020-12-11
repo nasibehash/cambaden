@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/media.css"> -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="img/"> -->
+    <link rel="stylesheet" href="css/splide.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
     <title>سایت کامبادن</title>
 </head>
 
@@ -744,75 +745,6 @@
     <script src="js/splide.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
 
-
-    <script>
-        new Splide('.splide').mount();
-
-        // Create and mount the thumbnails slider.
-        var secondarySlider = new Splide('#secondary-slider', {
-            rewind: true,
-            fixedWidth: 120,
-            fixedHeight: 90,
-            isNavigation: true,
-            gap: 10,
-            focus: 'center',
-            pagination: false,
-            cover: true,
-            loop: true,
-            // direction: rtl,
-            breakpoints: {
-                '500': {
-                    // fixedWidth: 66,
-                    // fixedHeight: 40,
-                    fixedWidth: 80,
-                    fixedHeight: 60,
-                },
-                '800': {
-                    // fixedWidth: 66,
-                    // fixedHeight: 40,
-                    fixedWidth: 160,
-                    fixedHeight: 120,
-                }
-
-            }
-        }).mount();
-
-        // Create the main slider.
-        var primarySlider = new Splide('#primary-slider', {
-            type: 'fade',
-            heightRatio: 0.1,
-            pagination: false,
-            arrows: false,
-            Width: 100,
-            fixedHeight: 500,
-            cover: true,
-
-
-        });
-
-        // Set the thumbnails slider as a sync target and then call mount.
-        primarySlider.sync(secondarySlider).mount();
-    </script>
-    <script>
-        $(function() {
-
-            $("#rateYo").rateYo({
-                rating: 3.6,
-                starWidth: "16px",
-                ratedFill: "#e9755c"
-            });
-
-        });
-        $(function() {
-
-            $("#rateYo_idea").rateYo({
-                rating: 3.6,
-                starWidth: "16px",
-                ratedFill: "#e9755c"
-            });
-
-        });
-    </script>
 </body>
 
 </html>
